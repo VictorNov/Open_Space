@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Open Space</title>
+    <script async src="index.js"></script>
+</head>
+<body>
+    <div class="space">
+        <div class="planet-area">
+            <img class="planet" src="https://stepik.org/media/attachments/lesson/452681/mars.png" alt="planet">
+            <img class="rocket" src="https://stepik.org/media/attachments/lesson/452681/rocket.png" alt="rocket">
+        </div>
+        <div class="control-panel">
+            <div class="control-panel__inner">
+                <label for="password"></label>
+                <input type="password" id="password" placeholder="Enter password to unlock" name="password">
+                <input type="button" class="button button-ok" value="OK" onclick="getPassword()">
+                <div class="check-buttons">
+                    <label for="ch1"></label>
+                    <input disabled type="checkbox" class="check-button" name="check" id="ch1" onchange="checkConditions()">
+                    <label for="ch2"></label>
+                    <input disabled type="checkbox" class="check-button" name="check" id="ch2" onchange="checkConditions()">
+                    <label for="ch3"></label>
+                    <input disabled type="checkbox" class="check-button" name="check" id="ch3" onchange="checkConditions()">
+                    <label for="ch4"></label>
+                    <input disabled type="checkbox" class="check-button" name="check" id="ch4" onchange="checkConditions()">
+                    <label for="ch5"></label>
+                    <input disabled type="checkbox" class="check-button" name="check" id="ch5" onchange="checkConditions()">
+                    <label for="ch6"></label>
+                    <input disabled type="checkbox" class="check-button" name="check" id="ch6" onchange="checkConditions()">
+                </div>
+                <div class="levers">
+                    <label for="lever1"></label>
+                    <input disabled type="range" class="lever" id="lever1" orient="vertical" onchange="checkConditions()">
+                    <label for="lever2"></label>
+                    <input disabled type="range" class="lever" id="lever2" orient="vertical" onchange="checkConditions()">
+                    <label for="lever3"></label>
+                    <input disabled type="range" class="lever" id="lever3" orient="vertical" onchange="checkConditions()">
+                    <label for="lever4"></label>
+                    <input disabled type="range" class="lever" id="lever4" orient="vertical" onchange="checkConditions()">
+                    <label for="lever5"></label>
+                    <input disabled type="range" class="lever" id="lever5" orient="vertical" onchange="checkConditions()">
+                </div>
+                <input disabled type="button" class="button button-launch" value="LAUNCH" onclick="animateRocket()">
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,145 @@
+body {
+    background-color: black;
+    font-family: 'Space Mono', monospace;
+}
+
+.space {
+    width: 1100px;
+    height: 100vh;
+    background: url("https://stepik.org/media/attachments/lesson/452681/space.png");
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.planet-area {
+    height: 80%;
+    width: 45%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.planet {
+    display: block;
+    width: 100%;
+    height: auto;
+    position: absolute;
+    left: -10px;
+    bottom: -10px;
+    z-index: 2;
+}
+
+.rocket {
+    display: block;
+    height: 150px;
+    width: auto;
+    position: absolute;
+    left: 290px;
+    bottom: 240px;
+    transform: rotate(33.3deg);
+    z-index: 1;
+}
+
+.control-panel {
+    width: 45%;
+    height: auto;
+    position: absolute;
+    /*top: 40px;*/
+    bottom: 40px;
+    right: 40px;
+    padding: 15px;
+    z-index: 99;
+    background-color: #000;
+    background-image: repeating-linear-gradient(45deg, transparent, transparent 20px, rgb(255, 208, 0) 20px, rgb(255, 208, 0) 40px);
+}
+
+.control-panel__inner {
+    background-color: #333;
+    padding: 20px;
+}
+
+#password {
+    display: inline-block;
+    float: left;
+    width: 60%;
+    height: 2rem;
+    border-radius: .5rem;
+    padding: 0 .5rem;
+    margin-left: 30px;
+    margin-bottom: 1rem;
+    letter-spacing: .1rem;
+    color: #111;
+    border: #ffd000 solid 2px;
+}
+
+.button {
+    display: inline-block;
+    height: 2rem;
+    border-radius: .5rem;
+    padding: 0 .5rem;
+    background-color: #ffd000;
+    transition: all .5s;
+    min-width: 6rem;
+    letter-spacing: .1rem;
+}
+
+.button:hover {
+    background-color: #cbae00;
+}
+
+.button-ok {
+    float: right;
+    margin-right: 30px;
+    margin-bottom: 1rem;
+}
+
+.check-buttons {
+    clear: both;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: #eee;
+    padding: 1rem;
+    margin: 1rem 0;
+    border-radius: .5rem;
+}
+
+label {
+    display: none;
+}
+.check-button {
+    transform: scale(1.5);
+}
+
+.levers {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: #eee;
+    padding: 1rem;
+    margin: 1rem 0;
+    border-radius: .5rem;
+}
+
+.lever {
+    writing-mode: bt-lr;
+    -webkit-appearance: slider-vertical;
+    width: 1rem;
+}
+
+.button-launch {
+    display: block;
+    margin: 0 auto;
+    background-color: orangered;
+    border-radius: 100%;
+    width: max-content;
+    height: auto;
+    aspect-ratio: 1 / 1;
+    color: #fff;
+    transition: all .5s;
+}
+
+.button-launch:hover {
+    background-color: #b90000;
+}
